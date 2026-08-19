@@ -1,0 +1,68 @@
+@theme {
+  /* ---- colour ------------------------------------------------------- */
+  --color-ink: #0a0c10;
+  --color-slab: #11141b;
+  --color-slab-hi: #171b24;
+  --color-rule: #1d222c;
+  --color-rule-hi: #2a3140;
+  --color-mute: #6c7484;
+  --color-dim: #949cad;
+  --color-paper: #e7eaf0;
+  --color-signal: #ffa318;
+  --color-signal-dim: #b0700f;
+  --color-trace: #4fc3d6;
+  --color-fault: #e0596a;
+  --color-good: #63c98a;
+
+  /* ---- type --------------------------------------------------------- */
+  --font-display: 'Martian Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-sans: 'IBM Plex Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1rem;
+  --text-tick: 0.75rem;
+  --text-tick--line-height: 1.125rem;
+  --text-xs: 0.8125rem;
+  --text-xs--line-height: 1.25rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.375rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6rem;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.75rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 1.9rem;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 2.3rem;
+  --text-3xl: 2.75rem;
+  --text-3xl--line-height: 3rem;
+  --text-4xl: 4rem;
+  --text-4xl--line-height: 4.1rem;
+  --text-5xl: 5.5rem;
+  --text-5xl--line-height: 5.4rem;
+
+  /* ---- motion ------------------------------------------------------- */
+  --ease-out-quint: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---- structure ---------------------------------------------------- */
+  --radius-control: 4px;
+  --radius-tag: 2px;
+}
+
+:root {
+  --t-fast: 120ms;
+  --t-base: 220ms;
+  --t-slow: 560ms;
+  --gutter: 132px;
+  --measure: 1120px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-fast: 0ms;
+    --t-base: 0ms;
+    --t-slow: 0ms;
+  }
+}
